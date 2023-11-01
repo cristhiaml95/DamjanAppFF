@@ -75,6 +75,11 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'barcode_scanGA',
           path: '/barcodeScanGA',
           builder: (context, params) => BarcodeScanGAWidget(),
+        ),
+        FFRoute(
+          name: 'barCodeDisplayed',
+          path: '/barCodeDisplayed',
+          builder: (context, params) => BarCodeDisplayedWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );

@@ -1,6 +1,7 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
+import '/custom_code/actions/index.dart' as actions;
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -9,7 +10,14 @@ import 'security_pop_up_model.dart';
 export 'security_pop_up_model.dart';
 
 class SecurityPopUpWidget extends StatefulWidget {
-  const SecurityPopUpWidget({Key? key}) : super(key: key);
+  const SecurityPopUpWidget({
+    Key? key,
+    required this.columnNameP,
+    required this.valueP,
+  }) : super(key: key);
+
+  final String? columnNameP;
+  final String? valueP;
 
   @override
   _SecurityPopUpWidgetState createState() => _SecurityPopUpWidgetState();
@@ -81,8 +89,13 @@ class _SecurityPopUpWidgetState extends State<SecurityPopUpWidget> {
                     padding:
                         EdgeInsetsDirectional.fromSTEB(24.0, 24.0, 24.0, 24.0),
                     child: FFButtonWidget(
-                      onPressed: () {
-                        print('Button pressed ...');
+                      onPressed: () async {
+                        await actions.insertBarCode(
+                          widget.columnNameP!,
+                          'barcodetest',
+                          widget.valueP!,
+                        );
+                        Navigator.pop(context);
                       },
                       text: FFLocalizations.of(context).getText(
                         '381bd70g' /* Yes */,

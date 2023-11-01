@@ -186,6 +186,16 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   },
   // barcode_scanGA
   {
+    '0vn7fvx7': {
+      'en': 'Scan',
+      'es': 'Escanear',
+      'sl': 'Skeniraj',
+    },
+    'pq70qy03': {
+      'en': 'Generate barcode',
+      'es': 'Generar código de barras',
+      'sl': 'Ustvari črtno kodo',
+    },
     'nknhaosm': {
       'en': 'Option 1',
       'es': 'Opción 1',
@@ -207,9 +217,9 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'sl': 'Pridobite naročilo',
     },
     '8i44cwqg': {
-      'en': 'Add code bar',
-      'es': 'Agregar barra de código',
-      'sl': 'Dodaj kodno vrstico',
+      'en': 'Add barcode',
+      'es': 'Agregar código de barras',
+      'sl': 'Dodajte črtno kodo',
     },
     '957b2y1s': {
       'en': 'Bar codes',
@@ -221,12 +231,35 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': 'Escanear',
       'sl': 'Skeniraj',
     },
-    '2vck3htq': {
+    'gumojpcd': {
       'en': 'Cancel',
-      'es': '',
-      'sl': '',
+      'es': 'Cancelar',
+      'sl': 'Prekliči',
     },
     'nvxcdjmz': {
+      'en': 'Home',
+      'es': 'Hogar',
+      'sl': 'domov',
+    },
+  },
+  // barCodeDisplayed
+  {
+    '4spubje4': {
+      'en': 'Scan',
+      'es': 'Escanear',
+      'sl': 'Skeniraj',
+    },
+    'ots37ylm': {
+      'en': 'Generate barcode',
+      'es': 'Generar código de barras',
+      'sl': 'Ustvari črtno kodo',
+    },
+    'uj07y5ka': {
+      'en': 'Barcode generator...',
+      'es': 'Generador de códigos de barras...',
+      'sl': 'Generator črtne kode ...',
+    },
+    'wet2q7l9': {
       'en': 'Home',
       'es': 'Hogar',
       'sl': 'domov',
