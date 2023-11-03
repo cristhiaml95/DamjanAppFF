@@ -1,9 +1,7 @@
-import '/backend/schema/structs/index.dart';
-import '/backend/supabase/supabase.dart';
+import '/auth/supabase_auth/auth_util.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
-import '/custom_code/actions/index.dart' as actions;
 import 'login_widget.dart' show LoginWidget;
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
@@ -47,11 +45,6 @@ class LoginModel extends FlutterFlowModel<LoginWidget> {
 
     return null;
   }
-
-  // Stores action output result for [Custom Action - correoInTable] action in Button widget.
-  bool? correoInTableOP;
-  // Stores action output result for [Custom Action - rowFromCorreo] action in Button widget.
-  UsuariosRow? rowFromCorreoOP;
 
   /// Initialization and disposal methods.
 

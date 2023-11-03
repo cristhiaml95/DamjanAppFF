@@ -196,6 +196,16 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': 'Generar código de barras',
       'sl': 'Ustvari črtno kodo',
     },
+    'olljv4ks': {
+      'en': 'Create account',
+      'es': 'Crear una cuenta',
+      'sl': 'Ustvari račun',
+    },
+    't6sj3l1n': {
+      'en': 'Log out',
+      'es': 'Cerrar sesión',
+      'sl': 'Odjava',
+    },
     'nknhaosm': {
       'en': 'Option 1',
       'es': 'Opción 1',
@@ -265,6 +275,109 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'sl': 'domov',
     },
   },
+  // sign_up
+  {
+    'f0llkj79': {
+      'en': 'Sign Up',
+      'es': 'Inscribirse',
+      'sl': 'Prijavite se',
+    },
+    'adno6ywk': {
+      'en': 'Create account',
+      'es': 'Crear una cuenta',
+      'sl': 'Ustvari račun',
+    },
+    'k8sisra0': {
+      'en': 'Let\'s get started by filling out the form below.',
+      'es': 'Comencemos completando el formulario a continuación.',
+      'sl': 'Začnimo z izpolnitvijo spodnjega obrazca.',
+    },
+    '1vqca3er': {
+      'en': 'Email...',
+      'es': 'Correo electrónico...',
+      'sl': 'E-naslov...',
+    },
+    '6q4w0lgc': {
+      'en': 'Password...',
+      'es': 'Contraseña...',
+      'sl': 'geslo ...',
+    },
+    'r69bf6b1': {
+      'en': 'Repeat password...',
+      'es': 'Repita la contraseña...',
+      'sl': 'Ponovite geslo...',
+    },
+    'ktgxf7s8': {
+      'en': 'Name...',
+      'es': 'Nombre...',
+      'sl': 'Ime ...',
+    },
+    'jfp2nnju': {
+      'en': 'Last name...',
+      'es': 'Apellido...',
+      'sl': 'Priimek...',
+    },
+    'umhoriwl': {
+      'en': 'active',
+      'es': 'activo',
+      'sl': 'aktivna',
+    },
+    'rbibo3td': {
+      'en': 'inactive',
+      'es': 'inactivo',
+      'sl': 'neaktiven',
+    },
+    'js1y36o9': {
+      'en': 'Status...',
+      'es': 'Estado...',
+      'sl': 'Stanje...',
+    },
+    '9j4y2uua': {
+      'en': 'Search for an item...',
+      'es': 'Buscar un artículo...',
+      'sl': 'Iskanje predmeta ...',
+    },
+    'bkw9rubp': {
+      'en': 'administrator',
+      'es': 'administrador',
+      'sl': 'skrbnik',
+    },
+    'tcqqsuco': {
+      'en': 'employee',
+      'es': 'empleado',
+      'sl': 'zaposleni',
+    },
+    'rb6zorpd': {
+      'en': 'User role...',
+      'es': 'Rol del usuario...',
+      'sl': 'Uporabniška vloga ...',
+    },
+    'qq1f31ux': {
+      'en': 'Search for an item...',
+      'es': 'Buscar un artículo...',
+      'sl': 'Iskanje predmeta ...',
+    },
+    'tgecuw5i': {
+      'en': 'Position...',
+      'es': 'Posición...',
+      'sl': 'Položaj ...',
+    },
+    'z655en7l': {
+      'en': 'Photo...',
+      'es': 'Foto...',
+      'sl': 'fotografija ...',
+    },
+    'olqsteqb': {
+      'en': 'Sign up',
+      'es': 'Inscribirse',
+      'sl': 'Prijavite se',
+    },
+    'saidnvqb': {
+      'en': 'Home',
+      'es': 'Hogar',
+      'sl': 'domov',
+    },
+  },
   // securityPopUp
   {
     'o33ebgcd': {
@@ -286,6 +399,11 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   // Miscellaneous
   {
     '7wdb1745': {
+      'en': '',
+      'es': '',
+      'sl': '',
+    },
+    'caabyrkw': {
       'en': '',
       'es': '',
       'sl': '',

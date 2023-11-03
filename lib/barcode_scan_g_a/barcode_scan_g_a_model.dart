@@ -1,3 +1,4 @@
+import '/auth/supabase_auth/auth_util.dart';
 import '/backend/supabase/supabase.dart';
 import '/components/security_pop_up_widget.dart';
 import '/flutter_flow/flutter_flow_drop_down.dart';

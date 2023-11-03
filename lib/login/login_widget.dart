@@ -1,9 +1,7 @@
-import '/backend/schema/structs/index.dart';
-import '/backend/supabase/supabase.dart';
+import '/auth/supabase_auth/auth_util.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
-import '/custom_code/actions/index.dart' as actions;
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -31,6 +29,7 @@ class _LoginWidgetState extends State<LoginWidget> {
 
     _model.emailAddressController ??= TextEditingController();
     _model.emailAddressFocusNode ??= FocusNode();
+
     _model.passwordController ??= TextEditingController();
     _model.passwordFocusNode ??= FocusNode();
   }
@@ -363,91 +362,29 @@ class _LoginWidgetState extends State<LoginWidget> {
                                                 .validate()) {
                                           return;
                                         }
-                                        _model.correoInTableOP =
-                                            await actions.correoInTable(
+                                        GoRouter.of(context).prepareAuthEvent();
+
+                                        final user =
+                                            await authManager.signInWithEmail(
+                                          context,
                                           _model.emailAddressController.text,
-                                          'correo',
-                                          'usuarios',
+                                          _model.passwordController.text,
                                         );
-                                        if (_model.correoInTableOP!) {
-                                          _model.rowFromCorreoOP =
-                                              await actions.rowFromCorreo(
-                                            _model.emailAddressController.text,
-                                            'correo',
-                                            'usuarios',
-                                          );
-                                          setState(() {
-                                            FFAppState().updateUserRowStruct(
-                                              (e) => e
-                                                ..id =
-                                                    _model.rowFromCorreoOP?.id
-                                                ..createAt = _model
-                                                    .rowFromCorreoOP?.createdAt
-                                                ..correo = _model
-                                                    .rowFromCorreoOP?.correo
-                                                ..nombres = _model
-                                                    .rowFromCorreoOP?.nombres
-                                                ..apellidos = _model
-                                                    .rowFromCorreoOP?.apellidos
-                                                ..actividad = _model
-                                                    .rowFromCorreoOP?.actividad
-                                                ..cargo = _model
-                                                    .rowFromCorreoOP?.cargo
-                                                ..password = _model
-                                                    .rowFromCorreoOP?.password
-                                                ..tipoUsuario = _model
-                                                    .rowFromCorreoOP
-                                                    ?.tipoUsuario
-                                                ..imagen = _model
-                                                    .rowFromCorreoOP?.imagen,
-                                            );
-                                          });
-                                          if (_model
-                                                  .rowFromCorreoOP?.password ==
-                                              _model.passwordController.text) {
-                                            context.pushNamed('barcode_scanGA');
-                                          } else {
-                                            ScaffoldMessenger.of(context)
-                                                .showSnackBar(
-                                              SnackBar(
-                                                content: Text(
-                                                  'Contraseña incorrecta.',
-                                                  style: TextStyle(
-                                                    color: FlutterFlowTheme.of(
-                                                            context)
-                                                        .primaryText,
-                                                  ),
-                                                ),
-                                                duration: Duration(
-                                                    milliseconds: 4000),
-                                                backgroundColor:
-                                                    FlutterFlowTheme.of(context)
-                                                        .secondary,
-                                              ),
-                                            );
-                                          }
-                                        } else {
-                                          ScaffoldMessenger.of(context)
-                                              .showSnackBar(
-                                            SnackBar(
-                                              content: Text(
-                                                'Correo no autorizado.',
-                                                style: TextStyle(
-                                                  color: FlutterFlowTheme.of(
-                                                          context)
-                                                      .primaryText,
-                                                ),
-                                              ),
-                                              duration:
-                                                  Duration(milliseconds: 4000),
-                                              backgroundColor:
-                                                  FlutterFlowTheme.of(context)
-                                                      .secondary,
-                                            ),
-                                          );
+                                        if (user == null) {
+                                          return;
                                         }
 
-                                        setState(() {});
+                                        context.goNamedAuth(
+                                          'barcode_scanGA',
+                                          context.mounted,
+                                          extra: <String, dynamic>{
+                                            kTransitionInfoKey: TransitionInfo(
+                                              hasTransition: true,
+                                              transitionType: PageTransitionType
+                                                  .rightToLeft,
+                                            ),
+                                          },
+                                        );
                                       },
                                       text: FFLocalizations.of(context).getText(
                                         '3yp6brfr' /* Log in */,
