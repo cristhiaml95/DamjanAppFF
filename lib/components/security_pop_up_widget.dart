@@ -3,18 +3,16 @@ import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import '/custom_code/actions/index.dart' as actions;
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'security_pop_up_model.dart';
 export 'security_pop_up_model.dart';
 
 class SecurityPopUpWidget extends StatefulWidget {
   const SecurityPopUpWidget({
-    Key? key,
+    super.key,
     required this.columnNameP,
     required this.valueP,
-  }) : super(key: key);
+  });
 
   final String? columnNameP;
   final String? valueP;
@@ -59,7 +57,7 @@ class _SecurityPopUpWidgetState extends State<SecurityPopUpWidget> {
         mainAxisSize: MainAxisSize.max,
         children: [
           Padding(
-            padding: EdgeInsetsDirectional.fromSTEB(0.0, 16.0, 0.0, 0.0),
+            padding: const EdgeInsetsDirectional.fromSTEB(0.0, 16.0, 0.0, 0.0),
             child: Icon(
               Icons.warning_rounded,
               color: FlutterFlowTheme.of(context).tertiary,
@@ -67,7 +65,7 @@ class _SecurityPopUpWidgetState extends State<SecurityPopUpWidget> {
             ),
           ),
           Padding(
-            padding: EdgeInsetsDirectional.fromSTEB(0.0, 24.0, 0.0, 24.0),
+            padding: const EdgeInsetsDirectional.fromSTEB(0.0, 24.0, 0.0, 24.0),
             child: Text(
               FFLocalizations.of(context).getText(
                 'o33ebgcd' /* Are you sure? */,
@@ -80,14 +78,14 @@ class _SecurityPopUpWidgetState extends State<SecurityPopUpWidget> {
             ),
           ),
           Padding(
-            padding: EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 0.0),
+            padding: const EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 0.0),
             child: Row(
               mainAxisSize: MainAxisSize.max,
               children: [
                 Expanded(
                   child: Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(24.0, 24.0, 24.0, 24.0),
+                        const EdgeInsetsDirectional.fromSTEB(24.0, 24.0, 24.0, 24.0),
                     child: FFButtonWidget(
                       onPressed: () async {
                         await actions.insertBarCode(
@@ -102,18 +100,18 @@ class _SecurityPopUpWidgetState extends State<SecurityPopUpWidget> {
                       ),
                       options: FFButtonOptions(
                         height: 40.0,
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             24.0, 0.0, 24.0, 0.0),
                         iconPadding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                        color: Color(0xFF74DA7F),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                        color: const Color(0xFF74DA7F),
                         textStyle:
                             FlutterFlowTheme.of(context).titleSmall.override(
                                   fontFamily: 'Readex Pro',
                                   color: Colors.white,
                                 ),
                         elevation: 3.0,
-                        borderSide: BorderSide(
+                        borderSide: const BorderSide(
                           color: Colors.transparent,
                           width: 1.0,
                         ),
@@ -125,7 +123,7 @@ class _SecurityPopUpWidgetState extends State<SecurityPopUpWidget> {
                 Expanded(
                   child: Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(24.0, 24.0, 24.0, 24.0),
+                        const EdgeInsetsDirectional.fromSTEB(24.0, 24.0, 24.0, 24.0),
                     child: FFButtonWidget(
                       onPressed: () async {
                         Navigator.pop(context);
@@ -135,18 +133,18 @@ class _SecurityPopUpWidgetState extends State<SecurityPopUpWidget> {
                       ),
                       options: FFButtonOptions(
                         height: 40.0,
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             24.0, 0.0, 24.0, 0.0),
                         iconPadding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                        color: Color(0xFFFF5A54),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                        color: const Color(0xFFFF5A54),
                         textStyle:
                             FlutterFlowTheme.of(context).titleSmall.override(
                                   fontFamily: 'Readex Pro',
                                   color: Colors.white,
                                 ),
                         elevation: 3.0,
-                        borderSide: BorderSide(
+                        borderSide: const BorderSide(
                           color: Colors.transparent,
                           width: 1.0,
                         ),

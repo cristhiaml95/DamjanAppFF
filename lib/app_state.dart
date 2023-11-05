@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import '/backend/schema/structs/index.dart';
-import 'backend/supabase/supabase.dart';
-import 'package:shared_preferences/shared_preferences.dart';
 import 'flutter_flow/flutter_flow_util.dart';
 
 class FFAppState extends ChangeNotifier {
@@ -25,10 +23,10 @@ class FFAppState extends ChangeNotifier {
   }
 
   SupabaseRowStruct _userRow = SupabaseRowStruct.fromSerializableMap(jsonDecode(
-      '{\"id\":\"\",\"correo\":\"\",\"nombres\":\"\",\"apellidos\":\"\",\"actividad\":\"\",\"cargo\":\"\",\"password\":\"\",\"tipo_usuario\":\"\",\"imagen\":\"\"}'));
+      '{"id":"","correo":"","nombres":"","apellidos":"","actividad":"","cargo":"","password":"","tipo_usuario":"","imagen":""}'));
   SupabaseRowStruct get userRow => _userRow;
-  set userRow(SupabaseRowStruct _value) {
-    _userRow = _value;
+  set userRow(SupabaseRowStruct value) {
+    _userRow = value;
   }
 
   void updateUserRowStruct(Function(SupabaseRowStruct) updateFn) {
@@ -37,49 +35,49 @@ class FFAppState extends ChangeNotifier {
 
   List<String> _orderList = [];
   List<String> get orderList => _orderList;
-  set orderList(List<String> _value) {
-    _orderList = _value;
+  set orderList(List<String> value) {
+    _orderList = value;
   }
 
-  void addToOrderList(String _value) {
-    _orderList.add(_value);
+  void addToOrderList(String value) {
+    _orderList.add(value);
   }
 
-  void removeFromOrderList(String _value) {
-    _orderList.remove(_value);
+  void removeFromOrderList(String value) {
+    _orderList.remove(value);
   }
 
-  void removeAtIndexFromOrderList(int _index) {
-    _orderList.removeAt(_index);
+  void removeAtIndexFromOrderList(int index) {
+    _orderList.removeAt(index);
   }
 
   void updateOrderListAtIndex(
-    int _index,
+    int index,
     String Function(String) updateFn,
   ) {
-    _orderList[_index] = updateFn(_orderList[_index]);
+    _orderList[index] = updateFn(_orderList[index]);
   }
 
-  void insertAtIndexInOrderList(int _index, String _value) {
-    _orderList.insert(_index, _value);
+  void insertAtIndexInOrderList(int index, String value) {
+    _orderList.insert(index, value);
   }
 
   String _wordInListColor = '#157AE8';
   String get wordInListColor => _wordInListColor;
-  set wordInListColor(String _value) {
-    _wordInListColor = _value;
+  set wordInListColor(String value) {
+    _wordInListColor = value;
   }
 
   bool _addCodeBar = false;
   bool get addCodeBar => _addCodeBar;
-  set addCodeBar(bool _value) {
-    _addCodeBar = _value;
+  set addCodeBar(bool value) {
+    _addCodeBar = value;
   }
 
   String _addCodeBarColor = '#1E2428';
   String get addCodeBarColor => _addCodeBarColor;
-  set addCodeBarColor(String _value) {
-    _addCodeBarColor = _value;
+  set addCodeBarColor(String value) {
+    _addCodeBarColor = value;
   }
 }
 

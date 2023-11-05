@@ -9,7 +9,7 @@ class ColumnNamesTable extends SupabaseTable<ColumnNamesRow> {
 }
 
 class ColumnNamesRow extends SupabaseDataRow {
-  ColumnNamesRow(Map<String, dynamic> data) : super(data);
+  ColumnNamesRow(super.data);
 
   @override
   SupabaseTable get table => ColumnNamesTable();

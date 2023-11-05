@@ -8,13 +8,12 @@ import '/flutter_flow/form_field_controller.dart';
 import '/flutter_flow/upload_data.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'sign_up_model.dart';
 export 'sign_up_model.dart';
 
 class SignUpWidget extends StatefulWidget {
-  const SignUpWidget({Key? key}) : super(key: key);
+  const SignUpWidget({super.key});
 
   @override
   _SignUpWidgetState createState() => _SignUpWidgetState();
@@ -89,7 +88,7 @@ class _SignUpWidgetState extends State<SignUpWidget> {
                   fontSize: 22.0,
                 ),
           ),
-          actions: [],
+          actions: const [],
           centerTitle: false,
           elevation: 2.0,
         ),
@@ -99,7 +98,7 @@ class _SignUpWidgetState extends State<SignUpWidget> {
             mainAxisSize: MainAxisSize.max,
             children: [
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(24.0, 24.0, 24.0, 24.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(24.0, 24.0, 24.0, 24.0),
                 child: Row(
                   mainAxisSize: MainAxisSize.max,
                   mainAxisAlignment: MainAxisAlignment.start,
@@ -117,7 +116,7 @@ class _SignUpWidgetState extends State<SignUpWidget> {
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 0.0, 12.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 0.0, 12.0),
                 child: Row(
                   mainAxisSize: MainAxisSize.max,
                   mainAxisAlignment: MainAxisAlignment.start,
@@ -142,7 +141,7 @@ class _SignUpWidgetState extends State<SignUpWidget> {
                   children: [
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(24.0, 8.0, 24.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(24.0, 8.0, 24.0, 0.0),
                       child: TextFormField(
                         controller: _model.emailTFController,
                         focusNode: _model.emailTFFocusNode,
@@ -190,7 +189,7 @@ class _SignUpWidgetState extends State<SignUpWidget> {
                     ),
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(24.0, 8.0, 24.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(24.0, 8.0, 24.0, 0.0),
                       child: TextFormField(
                         controller: _model.passwordTFController,
                         focusNode: _model.passwordTFFocusNode,
@@ -252,7 +251,7 @@ class _SignUpWidgetState extends State<SignUpWidget> {
                     ),
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(24.0, 8.0, 24.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(24.0, 8.0, 24.0, 0.0),
                       child: TextFormField(
                         controller: _model.rPasswordTFController,
                         focusNode: _model.rPasswordTFFocusNode,
@@ -314,7 +313,7 @@ class _SignUpWidgetState extends State<SignUpWidget> {
                     ),
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(24.0, 8.0, 24.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(24.0, 8.0, 24.0, 0.0),
                       child: TextFormField(
                         controller: _model.nameTFController,
                         focusNode: _model.nameTFFocusNode,
@@ -362,7 +361,7 @@ class _SignUpWidgetState extends State<SignUpWidget> {
                     ),
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(24.0, 8.0, 24.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(24.0, 8.0, 24.0, 0.0),
                       child: TextFormField(
                         controller: _model.lastNameTFController,
                         focusNode: _model.lastNameTFFocusNode,
@@ -410,7 +409,7 @@ class _SignUpWidgetState extends State<SignUpWidget> {
                     ),
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 0.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 0.0, 0.0),
                       child: FlutterFlowDropDown<String>(
                         controller: _model.statusDDValueController ??=
                             FormFieldController<String>(null),
@@ -444,7 +443,7 @@ class _SignUpWidgetState extends State<SignUpWidget> {
                         borderColor: FlutterFlowTheme.of(context).primary,
                         borderWidth: 2.0,
                         borderRadius: 12.0,
-                        margin: EdgeInsetsDirectional.fromSTEB(
+                        margin: const EdgeInsetsDirectional.fromSTEB(
                             16.0, 4.0, 16.0, 4.0),
                         hidesUnderline: true,
                         isSearchable: false,
@@ -453,7 +452,7 @@ class _SignUpWidgetState extends State<SignUpWidget> {
                     ),
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 0.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 0.0, 0.0),
                       child: FlutterFlowDropDown<String>(
                         controller: _model.userRoleDDValueController ??=
                             FormFieldController<String>(null),
@@ -487,7 +486,7 @@ class _SignUpWidgetState extends State<SignUpWidget> {
                         borderColor: FlutterFlowTheme.of(context).primary,
                         borderWidth: 2.0,
                         borderRadius: 12.0,
-                        margin: EdgeInsetsDirectional.fromSTEB(
+                        margin: const EdgeInsetsDirectional.fromSTEB(
                             16.0, 4.0, 16.0, 4.0),
                         hidesUnderline: true,
                         isSearchable: false,
@@ -496,7 +495,7 @@ class _SignUpWidgetState extends State<SignUpWidget> {
                     ),
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(24.0, 8.0, 24.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(24.0, 8.0, 24.0, 0.0),
                       child: TextFormField(
                         controller: _model.positionTFController,
                         focusNode: _model.positionTFFocusNode,
@@ -544,9 +543,9 @@ class _SignUpWidgetState extends State<SignUpWidget> {
                     ),
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 0.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 0.0, 0.0),
                       child: Stack(
-                        alignment: AlignmentDirectional(-1.0, 0.0),
+                        alignment: const AlignmentDirectional(-1.0, 0.0),
                         children: [
                           InkWell(
                             splashColor: Colors.transparent,
@@ -635,7 +634,7 @@ class _SignUpWidgetState extends State<SignUpWidget> {
                             ),
                           ),
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 12.0, 0.0, 0.0, 0.0),
                             child: Text(
                               FFLocalizations.of(context).getText(
@@ -655,7 +654,7 @@ class _SignUpWidgetState extends State<SignUpWidget> {
                     ),
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 0.0),
                       child: Row(
                         mainAxisSize: MainAxisSize.max,
                         mainAxisAlignment: MainAxisAlignment.center,
@@ -666,7 +665,7 @@ class _SignUpWidgetState extends State<SignUpWidget> {
                               if (_model.passwordTFController.text !=
                                   _model.rPasswordTFController.text) {
                                 ScaffoldMessenger.of(context).showSnackBar(
-                                  SnackBar(
+                                  const SnackBar(
                                     content: Text(
                                       'Passwords don\'t match!',
                                     ),
@@ -697,16 +696,17 @@ class _SignUpWidgetState extends State<SignUpWidget> {
                                 'imagen': _model.uploadedFileUrl,
                               });
 
-                              context.goNamedAuth('login', context.mounted);
+                              context.goNamedAuth(
+                                  'barcode_scanGA', context.mounted);
                             },
                             text: FFLocalizations.of(context).getText(
                               'olqsteqb' /* Sign up */,
                             ),
                             options: FFButtonOptions(
                               height: 40.0,
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   24.0, 0.0, 24.0, 0.0),
-                              iconPadding: EdgeInsetsDirectional.fromSTEB(
+                              iconPadding: const EdgeInsetsDirectional.fromSTEB(
                                   0.0, 0.0, 0.0, 0.0),
                               color: FlutterFlowTheme.of(context).primary,
                               textStyle: FlutterFlowTheme.of(context)
@@ -716,7 +716,7 @@ class _SignUpWidgetState extends State<SignUpWidget> {
                                     color: Colors.white,
                                   ),
                               elevation: 3.0,
-                              borderSide: BorderSide(
+                              borderSide: const BorderSide(
                                 color: Colors.transparent,
                                 width: 1.0,
                               ),

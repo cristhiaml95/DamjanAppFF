@@ -5,13 +5,12 @@ import '/flutter_flow/custom_functions.dart' as functions;
 import 'package:barcode_widget/barcode_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'bar_code_displayed_model.dart';
 export 'bar_code_displayed_model.dart';
 
 class BarCodeDisplayedWidget extends StatefulWidget {
-  const BarCodeDisplayedWidget({Key? key}) : super(key: key);
+  const BarCodeDisplayedWidget({super.key});
 
   @override
   _BarCodeDisplayedWidgetState createState() => _BarCodeDisplayedWidgetState();
@@ -64,19 +63,19 @@ class _BarCodeDisplayedWidgetState extends State<BarCodeDisplayedWidget> {
             mainAxisSize: MainAxisSize.max,
             children: [
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 24.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 24.0),
                 child: Row(
                   mainAxisSize: MainAxisSize.max,
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 120.0, 0.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 120.0, 0.0, 0.0),
                       child: Container(
                         width: 120.0,
                         height: 120.0,
                         clipBehavior: Clip.antiAlias,
-                        decoration: BoxDecoration(
+                        decoration: const BoxDecoration(
                           shape: BoxShape.circle,
                         ),
                         child: Image.network(
@@ -89,7 +88,7 @@ class _BarCodeDisplayedWidgetState extends State<BarCodeDisplayedWidget> {
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 8.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 8.0),
                 child: Row(
                   mainAxisSize: MainAxisSize.max,
                   mainAxisAlignment: MainAxisAlignment.center,
@@ -105,7 +104,7 @@ class _BarCodeDisplayedWidgetState extends State<BarCodeDisplayedWidget> {
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 0.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 0.0, 0.0),
                 child: Row(
                   mainAxisSize: MainAxisSize.max,
                   mainAxisAlignment: MainAxisAlignment.center,
@@ -118,7 +117,7 @@ class _BarCodeDisplayedWidgetState extends State<BarCodeDisplayedWidget> {
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(0.0, 48.0, 0.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 48.0, 0.0, 0.0),
                 child: Row(
                   mainAxisSize: MainAxisSize.max,
                   mainAxisAlignment: MainAxisAlignment.center,
@@ -132,10 +131,10 @@ class _BarCodeDisplayedWidgetState extends State<BarCodeDisplayedWidget> {
                       ),
                       options: FFButtonOptions(
                         height: 40.0,
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             24.0, 0.0, 24.0, 0.0),
                         iconPadding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                         color: FlutterFlowTheme.of(context).alternate,
                         textStyle: FlutterFlowTheme.of(context)
                             .titleSmall
@@ -155,7 +154,7 @@ class _BarCodeDisplayedWidgetState extends State<BarCodeDisplayedWidget> {
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(0.0, 48.0, 0.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 48.0, 0.0, 0.0),
                 child: Row(
                   mainAxisSize: MainAxisSize.max,
                   mainAxisAlignment: MainAxisAlignment.center,
@@ -169,10 +168,10 @@ class _BarCodeDisplayedWidgetState extends State<BarCodeDisplayedWidget> {
                       ),
                       options: FFButtonOptions(
                         height: 40.0,
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             24.0, 0.0, 24.0, 0.0),
                         iconPadding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                         color: FlutterFlowTheme.of(context).alternate,
                         textStyle: FlutterFlowTheme.of(context)
                             .titleSmall
@@ -197,7 +196,7 @@ class _BarCodeDisplayedWidgetState extends State<BarCodeDisplayedWidget> {
         appBar: AppBar(
           backgroundColor: FlutterFlowTheme.of(context).primary,
           automaticallyImplyLeading: true,
-          actions: [],
+          actions: const [],
           centerTitle: true,
           elevation: 4.0,
         ),
@@ -207,13 +206,13 @@ class _BarCodeDisplayedWidgetState extends State<BarCodeDisplayedWidget> {
             mainAxisSize: MainAxisSize.max,
             children: [
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(0.0, 120.0, 0.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 120.0, 0.0, 0.0),
                 child: Row(
                   mainAxisSize: MainAxisSize.max,
                   children: [
                     Expanded(
                       child: Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             16.0, 0.0, 16.0, 0.0),
                         child: TextFormField(
                           controller: _model.textController,
@@ -268,7 +267,7 @@ class _BarCodeDisplayedWidgetState extends State<BarCodeDisplayedWidget> {
               ),
               Flexible(
                 child: Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 120.0, 0.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 120.0, 0.0, 0.0),
                   child: BarcodeWidget(
                     data: valueOrDefault<String>(
                       _model.textController.text,
@@ -279,7 +278,7 @@ class _BarCodeDisplayedWidgetState extends State<BarCodeDisplayedWidget> {
                     height: 90.0,
                     color: FlutterFlowTheme.of(context).primaryText,
                     backgroundColor: Colors.transparent,
-                    errorBuilder: (_context, _error) => SizedBox(
+                    errorBuilder: (context, error) => const SizedBox(
                       width: 300.0,
                       height: 90.0,
                     ),

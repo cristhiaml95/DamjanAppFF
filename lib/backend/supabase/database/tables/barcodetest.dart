@@ -9,7 +9,7 @@ class BarcodetestTable extends SupabaseTable<BarcodetestRow> {
 }
 
 class BarcodetestRow extends SupabaseDataRow {
-  BarcodetestRow(Map<String, dynamic> data) : super(data);
+  BarcodetestRow(super.data);
 
   @override
   SupabaseTable get table => BarcodetestTable();

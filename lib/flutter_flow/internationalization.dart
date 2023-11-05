@@ -232,19 +232,19 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'sl': 'Dodajte črtno kodo',
     },
     '957b2y1s': {
-      'en': 'Bar codes',
-      'es': 'códigos de barras',
-      'sl': 'Črtne kode',
+      'en': 'Order bar codes',
+      'es': 'Ordenar códigos de barras',
+      'sl': 'Naročite črtne kode',
+    },
+    '594gprhz': {
+      'en': 'Bar codes scanned',
+      'es': 'Códigos de barras escaneados',
+      'sl': 'Črtne kode skenirane',
     },
     '7kyq5ln6': {
       'en': 'Scan',
       'es': 'Escanear',
       'sl': 'Skeniraj',
-    },
-    'gumojpcd': {
-      'en': 'Cancel',
-      'es': 'Cancelar',
-      'sl': 'Prekliči',
     },
     'nvxcdjmz': {
       'en': 'Home',

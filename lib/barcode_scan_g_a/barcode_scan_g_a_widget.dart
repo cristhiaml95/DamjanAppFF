@@ -1,6 +1,5 @@
 import '/auth/supabase_auth/auth_util.dart';
 import '/backend/supabase/supabase.dart';
-import '/components/security_pop_up_widget.dart';
 import '/flutter_flow/flutter_flow_drop_down.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
@@ -11,14 +10,12 @@ import '/flutter_flow/custom_functions.dart' as functions;
 import 'package:data_table_2/data_table_2.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_barcode_scanner/flutter_barcode_scanner.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'barcode_scan_g_a_model.dart';
 export 'barcode_scan_g_a_model.dart';
 
 class BarcodeScanGAWidget extends StatefulWidget {
-  const BarcodeScanGAWidget({Key? key}) : super(key: key);
+  const BarcodeScanGAWidget({super.key});
 
   @override
   _BarcodeScanGAWidgetState createState() => _BarcodeScanGAWidgetState();
@@ -70,19 +67,19 @@ class _BarcodeScanGAWidgetState extends State<BarcodeScanGAWidget> {
               mainAxisSize: MainAxisSize.max,
               children: [
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 24.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 24.0),
                   child: Row(
                     mainAxisSize: MainAxisSize.max,
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             0.0, 120.0, 0.0, 0.0),
                         child: Container(
                           width: 120.0,
                           height: 120.0,
                           clipBehavior: Clip.antiAlias,
-                          decoration: BoxDecoration(
+                          decoration: const BoxDecoration(
                             shape: BoxShape.circle,
                           ),
                           child: Image.network(
@@ -95,7 +92,7 @@ class _BarcodeScanGAWidgetState extends State<BarcodeScanGAWidget> {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 8.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 8.0),
                   child: Row(
                     mainAxisSize: MainAxisSize.max,
                     mainAxisAlignment: MainAxisAlignment.center,
@@ -111,7 +108,7 @@ class _BarcodeScanGAWidgetState extends State<BarcodeScanGAWidget> {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 0.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 0.0, 0.0),
                   child: Row(
                     mainAxisSize: MainAxisSize.max,
                     mainAxisAlignment: MainAxisAlignment.center,
@@ -124,7 +121,7 @@ class _BarcodeScanGAWidgetState extends State<BarcodeScanGAWidget> {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 48.0, 0.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 48.0, 0.0, 0.0),
                   child: Row(
                     mainAxisSize: MainAxisSize.max,
                     mainAxisAlignment: MainAxisAlignment.center,
@@ -138,9 +135,9 @@ class _BarcodeScanGAWidgetState extends State<BarcodeScanGAWidget> {
                         ),
                         options: FFButtonOptions(
                           height: 40.0,
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               24.0, 0.0, 24.0, 0.0),
-                          iconPadding: EdgeInsetsDirectional.fromSTEB(
+                          iconPadding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 0.0, 0.0, 0.0),
                           color: FlutterFlowTheme.of(context).alternate,
                           textStyle: FlutterFlowTheme.of(context)
@@ -161,7 +158,7 @@ class _BarcodeScanGAWidgetState extends State<BarcodeScanGAWidget> {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 48.0, 0.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 48.0, 0.0, 0.0),
                   child: Row(
                     mainAxisSize: MainAxisSize.max,
                     mainAxisAlignment: MainAxisAlignment.center,
@@ -175,9 +172,9 @@ class _BarcodeScanGAWidgetState extends State<BarcodeScanGAWidget> {
                         ),
                         options: FFButtonOptions(
                           height: 40.0,
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               24.0, 0.0, 24.0, 0.0),
-                          iconPadding: EdgeInsetsDirectional.fromSTEB(
+                          iconPadding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 0.0, 0.0, 0.0),
                           color: FlutterFlowTheme.of(context).alternate,
                           textStyle: FlutterFlowTheme.of(context)
@@ -198,7 +195,7 @@ class _BarcodeScanGAWidgetState extends State<BarcodeScanGAWidget> {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 48.0, 0.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 48.0, 0.0, 0.0),
                   child: Row(
                     mainAxisSize: MainAxisSize.max,
                     mainAxisAlignment: MainAxisAlignment.center,
@@ -212,9 +209,9 @@ class _BarcodeScanGAWidgetState extends State<BarcodeScanGAWidget> {
                         ),
                         options: FFButtonOptions(
                           height: 40.0,
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               24.0, 0.0, 24.0, 0.0),
-                          iconPadding: EdgeInsetsDirectional.fromSTEB(
+                          iconPadding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 0.0, 0.0, 0.0),
                           color: FlutterFlowTheme.of(context).alternate,
                           textStyle: FlutterFlowTheme.of(context)
@@ -235,7 +232,7 @@ class _BarcodeScanGAWidgetState extends State<BarcodeScanGAWidget> {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 48.0, 0.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 48.0, 0.0, 0.0),
                   child: Row(
                     mainAxisSize: MainAxisSize.max,
                     mainAxisAlignment: MainAxisAlignment.center,
@@ -246,17 +243,16 @@ class _BarcodeScanGAWidgetState extends State<BarcodeScanGAWidget> {
                           await authManager.signOut();
                           GoRouter.of(context).clearRedirectLocation();
 
-                          context.goNamedAuth(
-                              'barcode_scanGA', context.mounted);
+                          context.goNamedAuth('login', context.mounted);
                         },
                         text: FFLocalizations.of(context).getText(
                           't6sj3l1n' /* Log out */,
                         ),
                         options: FFButtonOptions(
                           height: 40.0,
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               24.0, 0.0, 24.0, 0.0),
-                          iconPadding: EdgeInsetsDirectional.fromSTEB(
+                          iconPadding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 0.0, 0.0, 0.0),
                           color: FlutterFlowTheme.of(context).alternate,
                           textStyle: FlutterFlowTheme.of(context)
@@ -282,7 +278,7 @@ class _BarcodeScanGAWidgetState extends State<BarcodeScanGAWidget> {
           appBar: AppBar(
             backgroundColor: FlutterFlowTheme.of(context).primary,
             automaticallyImplyLeading: true,
-            actions: [],
+            actions: const [],
             centerTitle: true,
             elevation: 4.0,
           ),
@@ -292,7 +288,7 @@ class _BarcodeScanGAWidgetState extends State<BarcodeScanGAWidget> {
               mainAxisSize: MainAxisSize.max,
               children: [
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 0.0, 8.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 0.0, 8.0),
                   child: Row(
                     mainAxisSize: MainAxisSize.max,
                     mainAxisAlignment: MainAxisAlignment.center,
@@ -344,7 +340,7 @@ class _BarcodeScanGAWidgetState extends State<BarcodeScanGAWidget> {
                             borderColor: FlutterFlowTheme.of(context).primary,
                             borderWidth: 2.0,
                             borderRadius: 16.0,
-                            margin: EdgeInsetsDirectional.fromSTEB(
+                            margin: const EdgeInsetsDirectional.fromSTEB(
                                 16.0, 4.0, 16.0, 4.0),
                             hidesUnderline: true,
                             isSearchable: false,
@@ -356,14 +352,14 @@ class _BarcodeScanGAWidgetState extends State<BarcodeScanGAWidget> {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 0.0, 8.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 0.0, 8.0),
                   child: Row(
                     mainAxisSize: MainAxisSize.max,
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Expanded(
                         child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               20.0, 0.0, 20.0, 0.0),
                           child: FFButtonWidget(
                             onPressed: () async {
@@ -383,9 +379,9 @@ class _BarcodeScanGAWidgetState extends State<BarcodeScanGAWidget> {
                             ),
                             options: FFButtonOptions(
                               height: 40.0,
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   24.0, 0.0, 24.0, 0.0),
-                              iconPadding: EdgeInsetsDirectional.fromSTEB(
+                              iconPadding: const EdgeInsetsDirectional.fromSTEB(
                                   0.0, 0.0, 0.0, 0.0),
                               color: FlutterFlowTheme.of(context).primary,
                               textStyle: FlutterFlowTheme.of(context)
@@ -395,7 +391,7 @@ class _BarcodeScanGAWidgetState extends State<BarcodeScanGAWidget> {
                                     color: Colors.white,
                                   ),
                               elevation: 3.0,
-                              borderSide: BorderSide(
+                              borderSide: const BorderSide(
                                 color: Colors.transparent,
                                 width: 1.0,
                               ),
@@ -406,7 +402,7 @@ class _BarcodeScanGAWidgetState extends State<BarcodeScanGAWidget> {
                       ),
                       Expanded(
                         child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               20.0, 0.0, 20.0, 0.0),
                           child: FFButtonWidget(
                             onPressed: () async {
@@ -417,32 +413,6 @@ class _BarcodeScanGAWidgetState extends State<BarcodeScanGAWidget> {
                                 setState(() {
                                   FFAppState().addCodeBarColor = '#14181B';
                                 });
-                                await showModalBottomSheet(
-                                  isScrollControlled: true,
-                                  backgroundColor: Colors.transparent,
-                                  enableDrag: false,
-                                  context: context,
-                                  builder: (context) {
-                                    return GestureDetector(
-                                      onTap: () => _model
-                                              .unfocusNode.canRequestFocus
-                                          ? FocusScope.of(context)
-                                              .requestFocus(_model.unfocusNode)
-                                          : FocusScope.of(context).unfocus(),
-                                      child: Padding(
-                                        padding:
-                                            MediaQuery.viewInsetsOf(context),
-                                        child: Container(
-                                          height: 720.0,
-                                          child: SecurityPopUpWidget(
-                                            columnNameP: _model.dropDownValue!,
-                                            valueP: _model.scanOP!,
-                                          ),
-                                        ),
-                                      ),
-                                    );
-                                  },
-                                ).then((value) => safeSetState(() {}));
                               } else {
                                 ScaffoldMessenger.of(context).showSnackBar(
                                   SnackBar(
@@ -453,7 +423,7 @@ class _BarcodeScanGAWidgetState extends State<BarcodeScanGAWidget> {
                                             .primaryText,
                                       ),
                                     ),
-                                    duration: Duration(milliseconds: 4000),
+                                    duration: const Duration(milliseconds: 4000),
                                     backgroundColor:
                                         FlutterFlowTheme.of(context).secondary,
                                   ),
@@ -465,9 +435,9 @@ class _BarcodeScanGAWidgetState extends State<BarcodeScanGAWidget> {
                             ),
                             options: FFButtonOptions(
                               height: 40.0,
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   24.0, 0.0, 24.0, 0.0),
-                              iconPadding: EdgeInsetsDirectional.fromSTEB(
+                              iconPadding: const EdgeInsetsDirectional.fromSTEB(
                                   0.0, 0.0, 0.0, 0.0),
                               color: colorFromCssString(
                                 FFAppState().addCodeBarColor,
@@ -481,7 +451,7 @@ class _BarcodeScanGAWidgetState extends State<BarcodeScanGAWidget> {
                                     color: Colors.white,
                                   ),
                               elevation: 3.0,
-                              borderSide: BorderSide(
+                              borderSide: const BorderSide(
                                 color: Colors.transparent,
                                 width: 1.0,
                               ),
@@ -495,7 +465,7 @@ class _BarcodeScanGAWidgetState extends State<BarcodeScanGAWidget> {
                 ),
                 Expanded(
                   child: Padding(
-                    padding: EdgeInsetsDirectional.fromSTEB(8.0, 8.0, 8.0, 8.0),
+                    padding: const EdgeInsetsDirectional.fromSTEB(8.0, 8.0, 8.0, 8.0),
                     child: Container(
                       width: 360.0,
                       height: double.infinity,
@@ -513,143 +483,183 @@ class _BarcodeScanGAWidgetState extends State<BarcodeScanGAWidget> {
                       child: Column(
                         mainAxisSize: MainAxisSize.max,
                         children: [
-                          Container(
+                          SizedBox(
                             height: 80.0,
                             child: Stack(
                               children: [
-                                if (valueOrDefault<bool>(
-                                  _model.wordInListOP,
-                                  true,
-                                ))
-                                  ClipRRect(
-                                    borderRadius: BorderRadius.circular(8.0),
-                                    child: Image.asset(
-                                      'assets/images/check.png',
-                                      width: 80.0,
-                                      height: 80.0,
-                                      fit: BoxFit.contain,
-                                    ),
+                                ClipRRect(
+                                  borderRadius: BorderRadius.circular(8.0),
+                                  child: Image.asset(
+                                    'assets/images/check.png',
+                                    width: 80.0,
+                                    height: 80.0,
+                                    fit: BoxFit.contain,
                                   ),
-                                if (!valueOrDefault<bool>(
-                                  _model.wordInListOP,
-                                  true,
-                                ))
-                                  ClipRRect(
-                                    borderRadius: BorderRadius.circular(8.0),
-                                    child: Image.asset(
-                                      'assets/images/cross.png',
-                                      width: 80.0,
-                                      height: 80.0,
-                                      fit: BoxFit.contain,
-                                    ),
+                                ),
+                                ClipRRect(
+                                  borderRadius: BorderRadius.circular(8.0),
+                                  child: Image.asset(
+                                    'assets/images/cross.png',
+                                    width: 80.0,
+                                    height: 80.0,
+                                    fit: BoxFit.contain,
                                   ),
+                                ),
                               ],
                             ),
                           ),
-                          Expanded(
-                            child: Builder(
-                              builder: (context) {
-                                final displayedOrder =
-                                    FFAppState().orderList.toList();
-                                return DataTable2(
-                                  columns: [
-                                    DataColumn2(
-                                      label: DefaultTextStyle.merge(
-                                        softWrap: true,
-                                        child: Text(
-                                          FFLocalizations.of(context).getText(
-                                            '957b2y1s' /* Bar codes */,
-                                          ),
-                                          textAlign: TextAlign.center,
-                                          style: FlutterFlowTheme.of(context)
-                                              .labelLarge,
-                                        ),
-                                      ),
-                                    ),
-                                  ],
-                                  rows: displayedOrder
-                                      .mapIndexed((displayedOrderIndex,
-                                              displayedOrderItem) =>
-                                          [
-                                            Text(
-                                              displayedOrderItem,
-                                              style:
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyMedium,
+                          Flexible(
+                            child: Row(
+                              mainAxisSize: MainAxisSize.max,
+                              children: [
+                                Expanded(
+                                  child: Builder(
+                                    builder: (context) {
+                                      final displayedOrder =
+                                          FFAppState().orderList.toList();
+                                      return SizedBox(
+                                        width: 150.0,
+                                        height: 340.0,
+                                        child: DataTable2(
+                                          columns: [
+                                            DataColumn2(
+                                              label: DefaultTextStyle.merge(
+                                                softWrap: true,
+                                                child: Text(
+                                                  FFLocalizations.of(context)
+                                                      .getText(
+                                                    '957b2y1s' /* Order bar codes */,
+                                                  ),
+                                                  textAlign: TextAlign.center,
+                                                  style: FlutterFlowTheme.of(
+                                                          context)
+                                                      .labelLarge,
+                                                ),
+                                              ),
                                             ),
-                                          ].map((c) => DataCell(c)).toList())
-                                      .map((e) => DataRow(cells: e))
-                                      .toList(),
-                                  headingRowColor: MaterialStateProperty.all(
-                                    FlutterFlowTheme.of(context)
-                                        .primaryBackground,
+                                          ],
+                                          rows: displayedOrder
+                                              .mapIndexed((displayedOrderIndex,
+                                                      displayedOrderItem) =>
+                                                  [
+                                                    Text(
+                                                      displayedOrderItem,
+                                                      style:
+                                                          FlutterFlowTheme.of(
+                                                                  context)
+                                                              .bodyMedium,
+                                                    ),
+                                                  ]
+                                                      .map((c) => DataCell(c))
+                                                      .toList())
+                                              .map((e) => DataRow(cells: e))
+                                              .toList(),
+                                          headingRowColor:
+                                              MaterialStateProperty.all(
+                                            FlutterFlowTheme.of(context)
+                                                .primaryBackground,
+                                          ),
+                                          headingRowHeight: 56.0,
+                                          dataRowColor:
+                                              MaterialStateProperty.all(
+                                            FlutterFlowTheme.of(context)
+                                                .secondaryBackground,
+                                          ),
+                                          dataRowHeight: 56.0,
+                                          border: TableBorder(
+                                            borderRadius:
+                                                BorderRadius.circular(0.0),
+                                          ),
+                                          dividerThickness: 1.0,
+                                          showBottomBorder: true,
+                                          minWidth: 49.0,
+                                        ),
+                                      );
+                                    },
                                   ),
-                                  headingRowHeight: 56.0,
-                                  dataRowColor: MaterialStateProperty.all(
-                                    FlutterFlowTheme.of(context)
-                                        .secondaryBackground,
+                                ),
+                                Expanded(
+                                  child: Builder(
+                                    builder: (context) {
+                                      final displayedMultipleBarCodesScanned =
+                                          _model.multipleBarCodesScannerOP!
+                                              .toList();
+                                      return SizedBox(
+                                        width: 150.0,
+                                        height: 340.0,
+                                        child: DataTable2(
+                                          columns: [
+                                            DataColumn2(
+                                              label: DefaultTextStyle.merge(
+                                                softWrap: true,
+                                                child: Text(
+                                                  FFLocalizations.of(context)
+                                                      .getText(
+                                                    '594gprhz' /* Bar codes scanned */,
+                                                  ),
+                                                  textAlign: TextAlign.center,
+                                                  style: FlutterFlowTheme.of(
+                                                          context)
+                                                      .labelLarge,
+                                                ),
+                                              ),
+                                            ),
+                                          ],
+                                          rows: displayedMultipleBarCodesScanned
+                                              .mapIndexed(
+                                                  (displayedMultipleBarCodesScannedIndex,
+                                                          displayedMultipleBarCodesScannedItem) =>
+                                                      [
+                                                        Text(
+                                                          valueOrDefault<
+                                                              String>(
+                                                            displayedMultipleBarCodesScannedItem,
+                                                            'No results yet',
+                                                          ),
+                                                          style: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .bodyMedium,
+                                                        ),
+                                                      ]
+                                                          .map((c) =>
+                                                              DataCell(c))
+                                                          .toList())
+                                              .map((e) => DataRow(cells: e))
+                                              .toList(),
+                                          headingRowColor:
+                                              MaterialStateProperty.all(
+                                            FlutterFlowTheme.of(context)
+                                                .primaryBackground,
+                                          ),
+                                          headingRowHeight: 56.0,
+                                          dataRowColor:
+                                              MaterialStateProperty.all(
+                                            FlutterFlowTheme.of(context)
+                                                .secondaryBackground,
+                                          ),
+                                          dataRowHeight: 56.0,
+                                          border: TableBorder(
+                                            borderRadius:
+                                                BorderRadius.circular(0.0),
+                                          ),
+                                          dividerThickness: 1.0,
+                                          showBottomBorder: true,
+                                          minWidth: 49.0,
+                                        ),
+                                      );
+                                    },
                                   ),
-                                  dataRowHeight: 56.0,
-                                  border: TableBorder(
-                                    borderRadius: BorderRadius.circular(0.0),
-                                  ),
-                                  dividerThickness: 1.0,
-                                  showBottomBorder: true,
-                                  minWidth: 49.0,
-                                );
-                              },
+                                ),
+                              ],
                             ),
                           ),
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
-                                0.0, 16.0, 0.0, 16.0),
-                            child: Text(
-                              _model.scanOP!,
-                              style: FlutterFlowTheme.of(context)
-                                  .bodyMedium
-                                  .override(
-                                    fontFamily: 'Readex Pro',
-                                    fontSize: 36.0,
-                                  ),
-                            ),
-                          ),
-                          Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 8.0, 8.0, 8.0, 8.0),
                             child: FFButtonWidget(
                               onPressed: () async {
-                                _model.scanOP =
-                                    await FlutterBarcodeScanner.scanBarcode(
-                                  '#C62828', // scanning line color
-                                  FFLocalizations.of(context).getText(
-                                    'gumojpcd' /* Cancel */,
-                                  ), // cancel button text
-                                  true, // whether to show the flash icon
-                                  ScanMode.BARCODE,
-                                );
-
-                                _model.wordInListOP = await actions.wordInList(
-                                  valueOrDefault<String>(
-                                    _model.scanOP,
-                                    'No result',
-                                  ),
-                                  FFAppState().orderList.toList(),
-                                );
-                                if (_model.wordInListOP!) {
-                                  setState(() {
-                                    FFAppState().wordInListColor = '#74DA7F';
-                                  });
-                                } else {
-                                  setState(() {
-                                    FFAppState().wordInListColor = '#FF5A54\t';
-                                  });
-                                  setState(() {
-                                    FFAppState().addCodeBar = true;
-                                  });
-                                  setState(() {
-                                    FFAppState().addCodeBarColor = '#157AE8';
-                                  });
-                                }
+                                _model.multipleBarCodesScannerOP =
+                                    await actions.multipleBarCodesScanner();
 
                                 setState(() {});
                               },
@@ -658,9 +668,9 @@ class _BarcodeScanGAWidgetState extends State<BarcodeScanGAWidget> {
                               ),
                               options: FFButtonOptions(
                                 height: 40.0,
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     24.0, 0.0, 24.0, 0.0),
-                                iconPadding: EdgeInsetsDirectional.fromSTEB(
+                                iconPadding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 0.0, 0.0, 0.0),
                                 color: FlutterFlowTheme.of(context).primary,
                                 textStyle: FlutterFlowTheme.of(context)
@@ -670,7 +680,7 @@ class _BarcodeScanGAWidgetState extends State<BarcodeScanGAWidget> {
                                       color: Colors.white,
                                     ),
                                 elevation: 3.0,
-                                borderSide: BorderSide(
+                                borderSide: const BorderSide(
                                   color: Colors.transparent,
                                   width: 1.0,
                                 ),
