@@ -1,9 +1,9 @@
 import '/flutter_flow/flutter_flow_util.dart';
-import 'bar_code_displayed_widget.dart' show BarCodeDisplayedWidget;
+import 'bar_code_displayed0_widget.dart' show BarCodeDisplayed0Widget;
 import 'package:data_table_2/data_table_2.dart';
 import 'package:flutter/material.dart';
 
-class BarCodeDisplayedModel extends FlutterFlowModel<BarCodeDisplayedWidget> {
+class BarCodeDisplayed0Model extends FlutterFlowModel<BarCodeDisplayed0Widget> {
   ///  State fields for stateful widgets in this page.
 
   final unfocusNode = FocusNode();

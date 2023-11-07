@@ -8,25 +8,26 @@ import 'package:data_table_2/data_table_2.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
-import 'bar_code_displayed_model.dart';
-export 'bar_code_displayed_model.dart';
+import 'bar_code_displayed1_model.dart';
+export 'bar_code_displayed1_model.dart';
 
-class BarCodeDisplayedWidget extends StatefulWidget {
-  const BarCodeDisplayedWidget({super.key});
+class BarCodeDisplayed1Widget extends StatefulWidget {
+  const BarCodeDisplayed1Widget({super.key});
 
   @override
-  _BarCodeDisplayedWidgetState createState() => _BarCodeDisplayedWidgetState();
+  _BarCodeDisplayed1WidgetState createState() =>
+      _BarCodeDisplayed1WidgetState();
 }
 
-class _BarCodeDisplayedWidgetState extends State<BarCodeDisplayedWidget> {
-  late BarCodeDisplayedModel _model;
+class _BarCodeDisplayed1WidgetState extends State<BarCodeDisplayed1Widget> {
+  late BarCodeDisplayed1Model _model;
 
   final scaffoldKey = GlobalKey<ScaffoldState>();
 
   @override
   void initState() {
     super.initState();
-    _model = createModel(context, () => BarCodeDisplayedModel());
+    _model = createModel(context, () => BarCodeDisplayed1Model());
   }
 
   @override
@@ -131,10 +132,10 @@ class _BarCodeDisplayedWidgetState extends State<BarCodeDisplayedWidget> {
                   children: [
                     FFButtonWidget(
                       onPressed: () async {
-                        context.pushNamed('barCodeDisplayed0');
+                        context.pushNamed('barCodeDisplayed');
                       },
                       text: FFLocalizations.of(context).getText(
-                        '7jpltuw4' /* 2nd scanner */,
+                        'zxas7pim' /* 1st Scanner */,
                       ),
                       options: FFButtonOptions(
                         height: 40.0,
@@ -168,10 +169,10 @@ class _BarCodeDisplayedWidgetState extends State<BarCodeDisplayedWidget> {
                   children: [
                     FFButtonWidget(
                       onPressed: () async {
-                        context.pushNamed('barCodeDisplayed1');
+                        context.pushNamed('barCodeDisplayed0');
                       },
                       text: FFLocalizations.of(context).getText(
-                        'p5yileyz' /* 3rd scanner */,
+                        'cfuk7qx9' /* 2nd Scanner */,
                       ),
                       options: FFButtonOptions(
                         height: 40.0,
@@ -208,7 +209,7 @@ class _BarCodeDisplayedWidgetState extends State<BarCodeDisplayedWidget> {
                         context.pushNamed('sign_up');
                       },
                       text: FFLocalizations.of(context).getText(
-                        'uz0rfqah' /* Create account */,
+                        'wqylckpi' /* Create account */,
                       ),
                       options: FFButtonOptions(
                         height: 40.0,
@@ -249,7 +250,7 @@ class _BarCodeDisplayedWidgetState extends State<BarCodeDisplayedWidget> {
                         context.goNamedAuth('login', context.mounted);
                       },
                       text: FFLocalizations.of(context).getText(
-                        'm7i7wccj' /* Log out */,
+                        'ta9u3c81' /* Log out */,
                       ),
                       options: FFButtonOptions(
                         height: 40.0,
@@ -291,13 +292,13 @@ class _BarCodeDisplayedWidgetState extends State<BarCodeDisplayedWidget> {
             mainAxisSize: MainAxisSize.max,
             children: [
               const Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(0.0, 32.0, 0.0, 0.0),
+                padding: EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 0.0),
                 child: SizedBox(
                   width: 350.0,
-                  height: 300.0,
-                  child: custom_widgets.BarCodeScanner(
+                  height: 450.0,
+                  child: custom_widgets.BarCodeScanner1(
                     width: 350.0,
-                    height: 300.0,
+                    height: 450.0,
                   ),
                 ),
               ),
@@ -318,7 +319,7 @@ class _BarCodeDisplayedWidgetState extends State<BarCodeDisplayedWidget> {
                                 softWrap: true,
                                 child: Text(
                                   FFLocalizations.of(context).getText(
-                                    'nxwm8y7z' /* Scanned barcodes */,
+                                    'fbajud5j' /* Scanned barcodes */,
                                   ),
                                   style: FlutterFlowTheme.of(context)
                                       .bodyLarge
@@ -369,7 +370,7 @@ class _BarCodeDisplayedWidgetState extends State<BarCodeDisplayedWidget> {
                     setState(() {});
                   },
                   text: FFLocalizations.of(context).getText(
-                    '6i7p1rrm' /* Refresh page */,
+                    '3faq8tgc' /* Refresh page */,
                   ),
                   options: FFButtonOptions(
                     height: 40.0,

@@ -79,6 +79,35 @@ class FFAppState extends ChangeNotifier {
   set addCodeBarColor(String value) {
     _addCodeBarColor = value;
   }
+
+  List<String> _multipleBarCodesList = ['No results'];
+  List<String> get multipleBarCodesList => _multipleBarCodesList;
+  set multipleBarCodesList(List<String> value) {
+    _multipleBarCodesList = value;
+  }
+
+  void addToMultipleBarCodesList(String value) {
+    _multipleBarCodesList.add(value);
+  }
+
+  void removeFromMultipleBarCodesList(String value) {
+    _multipleBarCodesList.remove(value);
+  }
+
+  void removeAtIndexFromMultipleBarCodesList(int index) {
+    _multipleBarCodesList.removeAt(index);
+  }
+
+  void updateMultipleBarCodesListAtIndex(
+    int index,
+    String Function(String) updateFn,
+  ) {
+    _multipleBarCodesList[index] = updateFn(_multipleBarCodesList[index]);
+  }
+
+  void insertAtIndexInMultipleBarCodesList(int index, String value) {
+    _multipleBarCodesList.insert(index, value);
+  }
 }
 
 LatLng? _latLngFromString(String? val) {

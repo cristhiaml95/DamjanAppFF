@@ -184,90 +184,37 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'sl': 'domov',
     },
   },
-  // barcode_scanGA
+  // barCodeDisplayed
   {
-    '0vn7fvx7': {
-      'en': 'Scan',
-      'es': 'Escanear',
-      'sl': 'Skeniraj',
+    'nxwm8y7z': {
+      'en': 'Scanned barcodes',
+      'es': 'códigos de barras escaneados',
+      'sl': 'Skenirane črtne kode',
     },
-    'pq70qy03': {
-      'en': 'Generate barcode',
-      'es': 'Generar código de barras',
-      'sl': 'Ustvari črtno kodo',
+    '6i7p1rrm': {
+      'en': 'Refresh page',
+      'es': 'Actualizar página',
+      'sl': 'Osveži stran',
     },
-    'olljv4ks': {
+    '7jpltuw4': {
+      'en': '2nd scanner',
+      'es': '2do escáner',
+      'sl': '2. skener',
+    },
+    'p5yileyz': {
+      'en': '3rd scanner',
+      'es': '3er escáner',
+      'sl': '3. skener',
+    },
+    'uz0rfqah': {
       'en': 'Create account',
       'es': 'Crear una cuenta',
       'sl': 'Ustvari račun',
     },
-    't6sj3l1n': {
+    'm7i7wccj': {
       'en': 'Log out',
       'es': 'Cerrar sesión',
       'sl': 'Odjava',
-    },
-    'nknhaosm': {
-      'en': 'Option 1',
-      'es': 'Opción 1',
-      'sl': 'Možnost 1',
-    },
-    'd7uc7ei5': {
-      'en': 'Select column...',
-      'es': 'Seleccionar columna...',
-      'sl': 'Izberi stolpec ...',
-    },
-    '4il38cg0': {
-      'en': 'Search for an item...',
-      'es': 'Buscar un artículo...',
-      'sl': 'Iskanje predmeta ...',
-    },
-    '1el6kr95': {
-      'en': 'Get order',
-      'es': 'Obtener orden',
-      'sl': 'Pridobite naročilo',
-    },
-    '8i44cwqg': {
-      'en': 'Add barcode',
-      'es': 'Agregar código de barras',
-      'sl': 'Dodajte črtno kodo',
-    },
-    '957b2y1s': {
-      'en': 'Order bar codes',
-      'es': 'Ordenar códigos de barras',
-      'sl': 'Naročite črtne kode',
-    },
-    '594gprhz': {
-      'en': 'Bar codes scanned',
-      'es': 'Códigos de barras escaneados',
-      'sl': 'Črtne kode skenirane',
-    },
-    '7kyq5ln6': {
-      'en': 'Scan',
-      'es': 'Escanear',
-      'sl': 'Skeniraj',
-    },
-    'nvxcdjmz': {
-      'en': 'Home',
-      'es': 'Hogar',
-      'sl': 'domov',
-    },
-  },
-  // barCodeDisplayed
-  {
-    '4spubje4': {
-      'en': 'Scan',
-      'es': 'Escanear',
-      'sl': 'Skeniraj',
-    },
-    'ots37ylm': {
-      'en': 'Generate barcode',
-      'es': 'Generar código de barras',
-      'sl': 'Ustvari črtno kodo',
-    },
-    'uj07y5ka': {
-      'en': 'Barcode generator...',
-      'es': 'Generador de códigos de barras...',
-      'sl': 'Generator črtne kode ...',
     },
     'wet2q7l9': {
       'en': 'Home',
@@ -373,6 +320,82 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'sl': 'Prijavite se',
     },
     'saidnvqb': {
+      'en': 'Home',
+      'es': 'Hogar',
+      'sl': 'domov',
+    },
+  },
+  // barCodeDisplayed0
+  {
+    'avuib3w6': {
+      'en': 'Scanned barcodes',
+      'es': 'códigos de barras escaneados',
+      'sl': 'Skenirane črtne kode',
+    },
+    'px5daftz': {
+      'en': 'Refresh page',
+      'es': 'Actualizar página',
+      'sl': 'Osveži stran',
+    },
+    'lmoz06h4': {
+      'en': '1st Scanner',
+      'es': '1er escáner',
+      'sl': '1. skener',
+    },
+    'wdkn3dms': {
+      'en': '3rd Scanner',
+      'es': '3er escáner',
+      'sl': '3. skener',
+    },
+    '1ghdz9m5': {
+      'en': 'Create account',
+      'es': 'Crear una cuenta',
+      'sl': 'Ustvari račun',
+    },
+    '7jy4y7hr': {
+      'en': 'Log out',
+      'es': 'Cerrar sesión',
+      'sl': 'Odjava',
+    },
+    'fljmjtfk': {
+      'en': 'Home',
+      'es': 'Hogar',
+      'sl': 'domov',
+    },
+  },
+  // barCodeDisplayed1
+  {
+    'fbajud5j': {
+      'en': 'Scanned barcodes',
+      'es': 'códigos de barras escaneados',
+      'sl': 'Skenirane črtne kode',
+    },
+    '3faq8tgc': {
+      'en': 'Refresh page',
+      'es': 'Actualizar página',
+      'sl': 'Osveži stran',
+    },
+    'zxas7pim': {
+      'en': '1st Scanner',
+      'es': '1er escáner',
+      'sl': '1. skener',
+    },
+    'cfuk7qx9': {
+      'en': '2nd Scanner',
+      'es': '2do escáner',
+      'sl': '2. skener',
+    },
+    'wqylckpi': {
+      'en': 'Create account',
+      'es': 'Crear una cuenta',
+      'sl': 'Ustvari račun',
+    },
+    'ta9u3c81': {
+      'en': 'Log out',
+      'es': 'Cerrar sesión',
+      'sl': 'Odjava',
+    },
+    'wosrkj0l': {
       'en': 'Home',
       'es': 'Hogar',
       'sl': 'domov',

@@ -697,7 +697,7 @@ class _SignUpWidgetState extends State<SignUpWidget> {
                               });
 
                               context.goNamedAuth(
-                                  'barcode_scanGA', context.mounted);
+                                  'barCodeDisplayed', context.mounted);
                             },
                             text: FFLocalizations.of(context).getText(
                               'olqsteqb' /* Sign up */,

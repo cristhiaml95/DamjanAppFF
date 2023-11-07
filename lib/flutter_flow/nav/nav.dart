@@ -71,23 +71,19 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
       debugLogDiagnostics: true,
       refreshListenable: appStateNotifier,
       errorBuilder: (context, state) =>
-          appStateNotifier.loggedIn ? const BarcodeScanGAWidget() : const LoginWidget(),
+          appStateNotifier.loggedIn ? const BarCodeDisplayedWidget() : const LoginWidget(),
       routes: [
         FFRoute(
           name: '_initialize',
           path: '/',
-          builder: (context, _) =>
-              appStateNotifier.loggedIn ? const BarcodeScanGAWidget() : const LoginWidget(),
+          builder: (context, _) => appStateNotifier.loggedIn
+              ? const BarCodeDisplayedWidget()
+              : const LoginWidget(),
         ),
         FFRoute(
           name: 'login',
           path: '/login',
           builder: (context, params) => const LoginWidget(),
-        ),
-        FFRoute(
-          name: 'barcode_scanGA',
-          path: '/barcodeScanGA',
-          builder: (context, params) => const BarcodeScanGAWidget(),
         ),
         FFRoute(
           name: 'barCodeDisplayed',
@@ -98,6 +94,16 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'sign_up',
           path: '/signUp',
           builder: (context, params) => const SignUpWidget(),
+        ),
+        FFRoute(
+          name: 'barCodeDisplayed0',
+          path: '/barCodeDisplayed0',
+          builder: (context, params) => const BarCodeDisplayed0Widget(),
+        ),
+        FFRoute(
+          name: 'barCodeDisplayed1',
+          path: '/barCodeDisplayed1',
+          builder: (context, params) => const BarCodeDisplayed1Widget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );
