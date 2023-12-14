@@ -184,44 +184,6 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'sl': 'domov',
     },
   },
-  // barCodeDisplayed
-  {
-    'nxwm8y7z': {
-      'en': 'Scanned barcodes',
-      'es': 'códigos de barras escaneados',
-      'sl': 'Skenirane črtne kode',
-    },
-    '6i7p1rrm': {
-      'en': 'Refresh page',
-      'es': 'Actualizar página',
-      'sl': 'Osveži stran',
-    },
-    '7jpltuw4': {
-      'en': '2nd scanner',
-      'es': '2do escáner',
-      'sl': '2. skener',
-    },
-    'p5yileyz': {
-      'en': '3rd scanner',
-      'es': '3er escáner',
-      'sl': '3. skener',
-    },
-    'uz0rfqah': {
-      'en': 'Create account',
-      'es': 'Crear una cuenta',
-      'sl': 'Ustvari račun',
-    },
-    'm7i7wccj': {
-      'en': 'Log out',
-      'es': 'Cerrar sesión',
-      'sl': 'Odjava',
-    },
-    'wet2q7l9': {
-      'en': 'Home',
-      'es': 'Hogar',
-      'sl': 'domov',
-    },
-  },
   // sign_up
   {
     'f0llkj79': {
@@ -305,7 +267,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'sl': 'Iskanje predmeta ...',
     },
     'tgecuw5i': {
-      'en': 'Position...',
+      'en': 'Job role...',
       'es': 'Posición...',
       'sl': 'Položaj ...',
     },
@@ -319,45 +281,67 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': 'Inscribirse',
       'sl': 'Prijavite se',
     },
+    'ukq13eoi': {
+      'en': 'Field is required',
+      'es': '',
+      'sl': '',
+    },
+    'fxok7ufx': {
+      'en': 'Please choose an option from the dropdown',
+      'es': '',
+      'sl': '',
+    },
+    '9sburboz': {
+      'en': 'Field is required',
+      'es': '',
+      'sl': '',
+    },
+    'xjojmu8g': {
+      'en': 'Please choose an option from the dropdown',
+      'es': '',
+      'sl': '',
+    },
+    'w8lmk192': {
+      'en': 'Field is required',
+      'es': '',
+      'sl': '',
+    },
+    '0q2w99vg': {
+      'en': 'Please choose an option from the dropdown',
+      'es': '',
+      'sl': '',
+    },
+    'ycopq0js': {
+      'en': 'Field is required',
+      'es': '',
+      'sl': '',
+    },
+    'h1uw5d77': {
+      'en': 'Please choose an option from the dropdown',
+      'es': '',
+      'sl': '',
+    },
+    'r64lvhrs': {
+      'en': 'Field is required',
+      'es': '',
+      'sl': '',
+    },
+    'vdlgmpw6': {
+      'en': 'Please choose an option from the dropdown',
+      'es': '',
+      'sl': '',
+    },
+    '93qwal1k': {
+      'en': 'Field is required',
+      'es': '',
+      'sl': '',
+    },
+    'pryc2a1a': {
+      'en': 'Please choose an option from the dropdown',
+      'es': '',
+      'sl': '',
+    },
     'saidnvqb': {
-      'en': 'Home',
-      'es': 'Hogar',
-      'sl': 'domov',
-    },
-  },
-  // barCodeDisplayed0
-  {
-    'avuib3w6': {
-      'en': 'Scanned barcodes',
-      'es': 'códigos de barras escaneados',
-      'sl': 'Skenirane črtne kode',
-    },
-    'px5daftz': {
-      'en': 'Refresh page',
-      'es': 'Actualizar página',
-      'sl': 'Osveži stran',
-    },
-    'lmoz06h4': {
-      'en': '1st Scanner',
-      'es': '1er escáner',
-      'sl': '1. skener',
-    },
-    'wdkn3dms': {
-      'en': '3rd Scanner',
-      'es': '3er escáner',
-      'sl': '3. skener',
-    },
-    '1ghdz9m5': {
-      'en': 'Create account',
-      'es': 'Crear una cuenta',
-      'sl': 'Ustvari račun',
-    },
-    '7jy4y7hr': {
-      'en': 'Log out',
-      'es': 'Cerrar sesión',
-      'sl': 'Odjava',
-    },
-    'fljmjtfk': {
       'en': 'Home',
       'es': 'Hogar',
       'sl': 'domov',
@@ -366,6 +350,11 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   // barCodeDisplayed1
   {
     'fbajud5j': {
+      'en': 'Requisition barcodes',
+      'es': 'Códigos de barras de solicitud',
+      'sl': 'Zahtevane črtne kode',
+    },
+    'uggxkqht': {
       'en': 'Scanned barcodes',
       'es': 'códigos de barras escaneados',
       'sl': 'Skenirane črtne kode',
@@ -375,15 +364,15 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': 'Actualizar página',
       'sl': 'Osveži stran',
     },
-    'zxas7pim': {
-      'en': '1st Scanner',
-      'es': '1er escáner',
-      'sl': '1. skener',
+    'nx0zwkzy': {
+      'en': 'Generate barcode',
+      'es': 'Generar código de barras',
+      'sl': 'Ustvari črtno kodo',
     },
-    'cfuk7qx9': {
-      'en': '2nd Scanner',
-      'es': '2do escáner',
-      'sl': '2. skener',
+    'v1jpujmq': {
+      'en': '2nd scan',
+      'es': '2do escaneo',
+      'sl': '2. skeniranje',
     },
     'wqylckpi': {
       'en': 'Create account',
@@ -396,6 +385,67 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'sl': 'Odjava',
     },
     'wosrkj0l': {
+      'en': 'Home',
+      'es': 'Hogar',
+      'sl': 'domov',
+    },
+  },
+  // barCodeDisplayed
+  {
+    'nmc0gz5f': {
+      'en': 'Barcode list',
+      'es': 'Lista de códigos de barras',
+      'sl': 'Seznam črtnih kod',
+    },
+    'ft3qbt0c': {
+      'en': 'Add',
+      'es': 'Agregar',
+      'sl': 'Dodaj',
+    },
+    'mi0tekdo': {
+      'en': 'Refresh',
+      'es': 'Actualizar',
+      'sl': 'Osveži',
+    },
+    'qtbg9rz5': {
+      'en': 'Scan',
+      'es': 'Escanear',
+      'sl': 'Skeniraj',
+    },
+    'my2fxo6n': {
+      'en': 'Cancel',
+      'es': 'Cancelar',
+      'sl': 'Prekliči',
+    },
+    'tj2or3on': {
+      'en': '2nd bar code',
+      'es': '',
+      'sl': '',
+    },
+    '81yhk1qh': {
+      'en': 'Home',
+      'es': 'Hogar',
+      'sl': 'domov',
+    },
+  },
+  // generateBarCode
+  {
+    'owrd4ztt': {
+      'en': 'Generate barcode...',
+      'es': 'Generar código de barras...',
+      'sl': 'Ustvari črtno kodo ...',
+    },
+    'fjnycbr1': {
+      'en': 'Back',
+      'es': '',
+      'sl': '',
+    },
+    '3yhc4j4l': {
+      'en': 'Generate bar code',
+      'es': '',
+      'sl': '',
+    },
+    'h8j8pxnv': {
       'en': 'Home',
       'es': 'Hogar',
       'sl': 'domov',
@@ -430,6 +480,14 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'en': '',
       'es': '',
       'sl': '',
+    },
+    '5uxysw98': {
+      'en':
+          'This app requires camera access to scan barcodes and needs to use the flash to ensure visibility in low light conditions.',
+      'es':
+          'Esta aplicación requiere acceso a la cámara para escanear códigos de barras y necesita usar el flash para garantizar la visibilidad en condiciones de poca luz.',
+      'sl':
+          'Ta aplikacija zahteva dostop do kamere za skeniranje črtnih kod in mora uporabiti bliskavico, da zagotovi vidljivost v slabih svetlobnih pogojih.',
     },
     '7wu66ogp': {
       'en': '',

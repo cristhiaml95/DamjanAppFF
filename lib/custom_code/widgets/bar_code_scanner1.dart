@@ -12,6 +12,8 @@ import 'package:flutter/material.dart';
 
 import 'package:camera/camera.dart';
 import 'package:qr_scanner_plus/qr_scanner_plus.dart';
+import '/custom_code/actions/get_column.dart' as custom_actions;
+import '/custom_code/actions/word_in_list.dart' as custom_actions;
 
 class BarCodeScanner1 extends StatefulWidget {
   const BarCodeScanner1({
@@ -28,31 +30,70 @@ class BarCodeScanner1 extends StatefulWidget {
 }
 
 class _BarCodeScanner1State extends State<BarCodeScanner1> {
+  late CameraController controller;
+  late List<CameraDescription> cameras;
   bool isScanning = false;
 
-  void _onResult(List<Barcode> barcodes) {
+  Future<void> initCamera() async {
+    cameras = await availableCameras();
+    controller = CameraController(
+      cameras.firstWhere(
+        (camera) => camera.lensDirection == CameraLensDirection.back,
+      ),
+      ResolutionPreset.high,
+    );
+    await controller.initialize();
+    setState(() {});
+  }
+
+  @override
+  void initState() {
+    super.initState();
+    initCamera();
+  }
+
+  @override
+  void dispose() {
+    controller.dispose();
+    super.dispose();
+  }
+
+  void _onResult(List<Barcode> barcodes) async {
+    final columnData =
+        await custom_actions.getColumn('barcodetest', 'barcode2');
+    final List<ScanResultInListListStruct> scannedBarCodes =
+        []; // Asegúrate de que este es el tipo correcto
+    final Set<String> uniqueBarCodes = Set<String>();
+
+    for (final barcode in barcodes) {
+      final scanResult = barcode.rawValue!;
+      if (uniqueBarCodes.contains(scanResult)) continue;
+      final inList = await custom_actions.wordInList(scanResult, columnData);
+      uniqueBarCodes.add(scanResult);
+
+      // Crear el objeto de la estructura y añadirlo a la lista
+      scannedBarCodes.add(ScanResultInListListStruct(
+        scanResult: scanResult,
+        inList: inList,
+      ));
+    }
+
     setState(() {
-      // Usa un Set para evitar duplicados
-      final Set<String> currentBarCodes =
-          Set.from(FFAppState().multipleBarCodesList);
-      // Agrega nuevos códigos de barras al Set, lo que automáticamente elimina duplicados
-      currentBarCodes.addAll(barcodes
-          .map((barcode) => barcode.rawValue!)
-          .where((value) => value != null));
-      // Convierte el Set de nuevo en una lista y guárdalo en el estado de la app
-      FFAppState().multipleBarCodesList = currentBarCodes.toList();
+      FFAppState().scanResultList = scannedBarCodes;
     });
   }
 
   void _resetBarCodes() {
     setState(() {
-      FFAppState().multipleBarCodesList.clear();
+      FFAppState().scanResultList.clear();
     });
   }
 
   void _toggleScanning() {
     setState(() {
-      // Cambia el estado de isScanning cada vez que se presiona el botón
+      if (!isScanning) {
+        FFAppState().scanResultList.clear();
+      }
       isScanning = !isScanning;
     });
   }
@@ -61,24 +102,25 @@ class _BarCodeScanner1State extends State<BarCodeScanner1> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('BarcodeScanner1'),
+        title: const Text('Barcode Scanner'),
       ),
       body: Center(
         child: isScanning
             ? QrScannerPlusView(
+                debug: true,
                 (barcodes) {
                   _onResult(barcodes);
                 },
+                // Asegúrate de incluir cualquier otro argumento requerido aquí
               )
-            : Container(), // Mostramos un contenedor vacío cuando no estamos escaneando
+            : Container(),
       ),
       floatingActionButton: Column(
         mainAxisAlignment: MainAxisAlignment.end,
         children: [
           FloatingActionButton(
-            onPressed:
-                _toggleScanning, // Este botón alternará el estado de escaneo
-            tooltip: 'Escanear',
+            onPressed: _toggleScanning,
+            tooltip: 'Scan',
             child: Icon(isScanning ? Icons.stop : Icons.camera),
           ),
           const SizedBox(height: 10),

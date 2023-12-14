@@ -3,6 +3,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
+
 import '/auth/base_auth_user_provider.dart';
 
 import '/index.dart';
@@ -71,13 +72,13 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
       debugLogDiagnostics: true,
       refreshListenable: appStateNotifier,
       errorBuilder: (context, state) =>
-          appStateNotifier.loggedIn ? const BarCodeDisplayedWidget() : const LoginWidget(),
+          appStateNotifier.loggedIn ? const BarCodeDisplayed1Widget() : const LoginWidget(),
       routes: [
         FFRoute(
           name: '_initialize',
           path: '/',
           builder: (context, _) => appStateNotifier.loggedIn
-              ? const BarCodeDisplayedWidget()
+              ? const BarCodeDisplayed1Widget()
               : const LoginWidget(),
         ),
         FFRoute(
@@ -86,24 +87,24 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           builder: (context, params) => const LoginWidget(),
         ),
         FFRoute(
-          name: 'barCodeDisplayed',
-          path: '/barCodeDisplayed',
-          builder: (context, params) => const BarCodeDisplayedWidget(),
-        ),
-        FFRoute(
           name: 'sign_up',
           path: '/signUp',
           builder: (context, params) => const SignUpWidget(),
         ),
         FFRoute(
-          name: 'barCodeDisplayed0',
-          path: '/barCodeDisplayed0',
-          builder: (context, params) => const BarCodeDisplayed0Widget(),
-        ),
-        FFRoute(
           name: 'barCodeDisplayed1',
           path: '/barCodeDisplayed1',
           builder: (context, params) => const BarCodeDisplayed1Widget(),
+        ),
+        FFRoute(
+          name: 'barCodeDisplayed',
+          path: '/barCodeDisplayed',
+          builder: (context, params) => const BarCodeDisplayedWidget(),
+        ),
+        FFRoute(
+          name: 'generateBarCode',
+          path: '/generateBarCode',
+          builder: (context, params) => const GenerateBarCodeWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );

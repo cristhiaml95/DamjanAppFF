@@ -503,7 +503,7 @@ class _SignUpWidgetState extends State<SignUpWidget> {
                         obscureText: false,
                         decoration: InputDecoration(
                           labelText: FFLocalizations.of(context).getText(
-                            'tgecuw5i' /* Position... */,
+                            'tgecuw5i' /* Job role... */,
                           ),
                           labelStyle: FlutterFlowTheme.of(context).labelMedium,
                           hintStyle: FlutterFlowTheme.of(context).labelMedium,
@@ -661,6 +661,13 @@ class _SignUpWidgetState extends State<SignUpWidget> {
                         children: [
                           FFButtonWidget(
                             onPressed: () async {
+                              if (_model.formKey.currentState == null ||
+                                  !_model.formKey.currentState!.validate()) {
+                                return;
+                              }
+                              if (_model.userRoleDDValue == null) {
+                                return;
+                              }
                               GoRouter.of(context).prepareAuthEvent();
                               if (_model.passwordTFController.text !=
                                   _model.rPasswordTFController.text) {
@@ -684,20 +691,26 @@ class _SignUpWidgetState extends State<SignUpWidget> {
                                 return;
                               }
 
-                              await UsuariosTable().insert({
-                                'id': currentUserUid,
-                                'correo': currentUserEmail,
-                                'nombres': _model.nameTFController.text,
-                                'apellidos': _model.lastNameTFController.text,
-                                'tipo_usuario': _model.userRoleDDValue,
-                                'actividad': _model.statusDDValue,
-                                'cargo': _model.positionTFController.text,
+                              await UsersTable().insert({
                                 'password': _model.rPasswordTFController.text,
-                                'imagen': _model.uploadedFileUrl,
+                                'email': currentUserEmail,
+                                'name': _model.nameTFController.text,
+                                'last_name': _model.lastNameTFController.text,
+                                'user_type': _model.userRoleDDValue,
+                                'status': _model.statusDDValue != null &&
+                                        _model.statusDDValue != ''
+                                    ? _model.statusDDValue
+                                    : 'active',
+                                'job': _model.positionTFController.text != ''
+                                    ? _model.positionTFController.text
+                                    : 'employee',
+                                'image': _model.uploadedFileUrl != ''
+                                    ? _model.uploadedFileUrl
+                                    : 'https://aaxptvfturwawmigxwgq.supabase.co/storage/v1/object/sign/assets/foto_perfil.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJhc3NldHMvZm90b19wZXJmaWwucG5nIiwiaWF0IjoxNzAyNTQ1NDQ1LCJleHAiOjIwMTc5MDU0NDV9.BNDUq3u8KLxjZyhFFHawzycLXsZEji4kW1YM0iPabn8&t=2023-12-14T09%3A17%3A25.381Z',
                               });
 
-                              context.goNamedAuth(
-                                  'barCodeDisplayed', context.mounted);
+                              context.pushNamedAuth(
+                                  'barCodeDisplayed1', context.mounted);
                             },
                             text: FFLocalizations.of(context).getText(
                               'olqsteqb' /* Sign up */,

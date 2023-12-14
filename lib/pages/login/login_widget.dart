@@ -374,7 +374,7 @@ class _LoginWidgetState extends State<LoginWidget> {
                                         }
 
                                         context.goNamedAuth(
-                                          'barCodeDisplayed',
+                                          'barCodeDisplayed1',
                                           context.mounted,
                                           extra: <String, dynamic>{
                                             kTransitionInfoKey: const TransitionInfo(

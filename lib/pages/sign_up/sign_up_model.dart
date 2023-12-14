@@ -12,24 +12,74 @@ class SignUpModel extends FlutterFlowModel<SignUpWidget> {
   FocusNode? emailTFFocusNode;
   TextEditingController? emailTFController;
   String? Function(BuildContext, String?)? emailTFControllerValidator;
+  String? _emailTFControllerValidator(BuildContext context, String? val) {
+    if (val == null || val.isEmpty) {
+      return FFLocalizations.of(context).getText(
+        'ukq13eoi' /* Field is required */,
+      );
+    }
+
+    return null;
+  }
+
   // State field(s) for PasswordTF widget.
   FocusNode? passwordTFFocusNode;
   TextEditingController? passwordTFController;
   late bool passwordTFVisibility;
   String? Function(BuildContext, String?)? passwordTFControllerValidator;
+  String? _passwordTFControllerValidator(BuildContext context, String? val) {
+    if (val == null || val.isEmpty) {
+      return FFLocalizations.of(context).getText(
+        '9sburboz' /* Field is required */,
+      );
+    }
+
+    return null;
+  }
+
   // State field(s) for RPasswordTF widget.
   FocusNode? rPasswordTFFocusNode;
   TextEditingController? rPasswordTFController;
   late bool rPasswordTFVisibility;
   String? Function(BuildContext, String?)? rPasswordTFControllerValidator;
+  String? _rPasswordTFControllerValidator(BuildContext context, String? val) {
+    if (val == null || val.isEmpty) {
+      return FFLocalizations.of(context).getText(
+        'w8lmk192' /* Field is required */,
+      );
+    }
+
+    return null;
+  }
+
   // State field(s) for NameTF widget.
   FocusNode? nameTFFocusNode;
   TextEditingController? nameTFController;
   String? Function(BuildContext, String?)? nameTFControllerValidator;
+  String? _nameTFControllerValidator(BuildContext context, String? val) {
+    if (val == null || val.isEmpty) {
+      return FFLocalizations.of(context).getText(
+        'ycopq0js' /* Field is required */,
+      );
+    }
+
+    return null;
+  }
+
   // State field(s) for LastNameTF widget.
   FocusNode? lastNameTFFocusNode;
   TextEditingController? lastNameTFController;
   String? Function(BuildContext, String?)? lastNameTFControllerValidator;
+  String? _lastNameTFControllerValidator(BuildContext context, String? val) {
+    if (val == null || val.isEmpty) {
+      return FFLocalizations.of(context).getText(
+        'r64lvhrs' /* Field is required */,
+      );
+    }
+
+    return null;
+  }
+
   // State field(s) for statusDD widget.
   String? statusDDValue;
   FormFieldController<String>? statusDDValueController;
@@ -49,8 +99,13 @@ class SignUpModel extends FlutterFlowModel<SignUpWidget> {
 
   @override
   void initState(BuildContext context) {
+    emailTFControllerValidator = _emailTFControllerValidator;
     passwordTFVisibility = false;
+    passwordTFControllerValidator = _passwordTFControllerValidator;
     rPasswordTFVisibility = false;
+    rPasswordTFControllerValidator = _rPasswordTFControllerValidator;
+    nameTFControllerValidator = _nameTFControllerValidator;
+    lastNameTFControllerValidator = _lastNameTFControllerValidator;
   }
 
   @override

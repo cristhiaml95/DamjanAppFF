@@ -74,12 +74,6 @@ class FFAppState extends ChangeNotifier {
     _addCodeBar = value;
   }
 
-  String _addCodeBarColor = '#1E2428';
-  String get addCodeBarColor => _addCodeBarColor;
-  set addCodeBarColor(String value) {
-    _addCodeBarColor = value;
-  }
-
   List<String> _multipleBarCodesList = ['No results'];
   List<String> get multipleBarCodesList => _multipleBarCodesList;
   set multipleBarCodesList(List<String> value) {
@@ -107,6 +101,36 @@ class FFAppState extends ChangeNotifier {
 
   void insertAtIndexInMultipleBarCodesList(int index, String value) {
     _multipleBarCodesList.insert(index, value);
+  }
+
+  List<ScanResultInListListStruct> _scanResultList = [];
+  List<ScanResultInListListStruct> get scanResultList => _scanResultList;
+  set scanResultList(List<ScanResultInListListStruct> value) {
+    _scanResultList = value;
+  }
+
+  void addToScanResultList(ScanResultInListListStruct value) {
+    _scanResultList.add(value);
+  }
+
+  void removeFromScanResultList(ScanResultInListListStruct value) {
+    _scanResultList.remove(value);
+  }
+
+  void removeAtIndexFromScanResultList(int index) {
+    _scanResultList.removeAt(index);
+  }
+
+  void updateScanResultListAtIndex(
+    int index,
+    ScanResultInListListStruct Function(ScanResultInListListStruct) updateFn,
+  ) {
+    _scanResultList[index] = updateFn(_scanResultList[index]);
+  }
+
+  void insertAtIndexInScanResultList(
+      int index, ScanResultInListListStruct value) {
+    _scanResultList.insert(index, value);
   }
 }
 

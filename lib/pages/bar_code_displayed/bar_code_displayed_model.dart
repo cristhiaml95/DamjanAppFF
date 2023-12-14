@@ -7,6 +7,11 @@ class BarCodeDisplayedModel extends FlutterFlowModel<BarCodeDisplayedWidget> {
   ///  State fields for stateful widgets in this page.
 
   final unfocusNode = FocusNode();
+  // Stores action output result for [Custom Action - getColumn] action in Button widget.
+  List<String>? getColumnOP;
+  var barCodeOP = '';
+  // Stores action output result for [Custom Action - wordInList] action in Button widget.
+  bool? wordInListOP;
 
   /// Initialization and disposal methods.
 

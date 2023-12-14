@@ -3,6 +3,7 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 
 import '/backend/schema/structs/index.dart';
+
 import '/backend/supabase/supabase.dart';
 
 import '../../flutter_flow/place.dart';
@@ -212,12 +213,38 @@ dynamic deserializeParam<T>(
       case ParamType.SupabaseRow:
         final data = json.decode(param) as Map<String, dynamic>;
         switch (T) {
+          case ManipulationsRow:
+            return ManipulationsRow(data);
+          case WarehousePositionsRow:
+            return WarehousePositionsRow(data);
+          case LoadingGatesRow:
+            return LoadingGatesRow(data);
+          case OrderLevelRow:
+            return OrderLevelRow(data);
+          case PackagingRow:
+            return PackagingRow(data);
+          case GoodsRow:
+            return GoodsRow(data);
+          case DetailsRow:
+            return DetailsRow(data);
+          case ClientsRow:
+            return ClientsRow(data);
           case BarcodetestRow:
             return BarcodetestRow(data);
-          case UsuariosRow:
-            return UsuariosRow(data);
-          case ColumnNamesRow:
-            return ColumnNamesRow(data);
+          case ViewOrderSummaryRow:
+            return ViewOrderSummaryRow(data);
+          case VistaOrderLevelExtendedRow:
+            return VistaOrderLevelExtendedRow(data);
+          case CustomsRow:
+            return CustomsRow(data);
+          case UsersRow:
+            return UsersRow(data);
+          case WarehousesRow:
+            return WarehousesRow(data);
+          case DetailsViewRow:
+            return DetailsViewRow(data);
+          case GoodDescriptionsRow:
+            return GoodDescriptionsRow(data);
           default:
             return null;
         }
